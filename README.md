@@ -1,25 +1,25 @@
-### Screenshots
+# Screenshots
+<img width="829" alt="Screenshot 2024-10-01 at 11 15 53" src="https://github.com/user-attachments/assets/0386a8fd-f4f4-467c-90fe-123decb2ffe4">
+<img width="806" alt="Screenshot 2024-10-01 at 11 15 43" src="https://github.com/user-attachments/assets/66b5b99f-5b83-4d87-9164-2fe87e092074">
 
-### Setup
+# Setup
 
-# Setup Server
+### Server
 - Navigate to the `server` directory: `cd ./server`
 - Execute the command to install and build: `npm i && npm run build`
 - Run the project in watch mode in case you'd like to tinker with it: `npm run dev`
 - The server should be running on port `8080`: `http://localhost:8080`
 
-# Setup Client
+### Client
 - Navigate to website `directory`: `cd ./website`
 - Build: `npm i && npm start`
 - The client should start automatically on port `3000`: `http://localhost:3000`
 
-### Test Cases
+# Test Cases
 
 - Navigate to the `server` directory: `cd ./server`
 - Execute the test cases under `index.test.js`: `npm test`
 - I intentionally left the console logs in the algorithm to show the inputs/outputs in the same format as the prompt.
-
-### AngelList Prompt
 
 # About this project
 
