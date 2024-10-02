@@ -2,7 +2,6 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-const pkg = require("../package.json");
 
 dotenv.config();
 const port = process.env.PORT || 8080;
@@ -20,7 +19,6 @@ export default function (app: Express) {
   app.get("/status", (req, res) => {
     res.json({
       app: "angellist",
-      version: pkg.version,
     });
   });
 
