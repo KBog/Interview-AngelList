@@ -12,3 +12,20 @@ this could potentially happen less often?
 
 Response
 ~~~~~~~~
+
+Usually in all customer service complaints, we want to start by acknowledging their frustration. We then explain clearly
+the reasoning behind the behavior they're encoutering. Communicate with them that the proration is put in place to allow
+everyone a fair shot at the deal, highlighting the fact that investing consistently on our platform is important as it impacts
+historical averages which in turn impact their future allocation.
+
+At this point, I would want to reassure them that next time around their investment will be larger than $25K. Which we can
+achieve by adding some sort of a weighted average (a multiplier) to their average_amount along with a cooldown, where it'll
+automatically allow them to invest more than the other investors. And the cooldown will ensure that multiplier will go away
+completely/slowly wane after a certain number of particiated deals.
+- We can also tweak the algorithm to account for a base allocation for all investors, then a weighted allocation based on
+historicals. This way everyone gets some money in, like $10K, and the rest is prorated as usual.
+- For the bigger investors, we can also offer a VIP (or priority access) to deals ahead of time, or offer them a higher initial
+allocation.
+
+What's very important after making the change is to follow up with those angry investors to ensure they're happy with the change,
+and if not, ask them for feedback on what they would like to see change.

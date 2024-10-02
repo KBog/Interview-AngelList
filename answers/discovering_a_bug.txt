@@ -9,3 +9,39 @@ issue and how would you communicate this to the affected customers.
 
 Response
 ~~~~~~~~
+
+It's a pretty interesting problem, and definitely possible! :D
+
+I would think about handling the deal that happened two weeks ago differently from the one that happened two years ago.
+
+1. First and foremost, we investigate the bug (analytics, logging, reports, etc.) and patch it up immediately to ensure
+it doesn't impact more deals. Of course along the way we need to start drafting a postmortem that will be shared at a later
+point.
+
+2. For the affected deals, we need to bucket them into whether they happened (A) within the last 2 weeks, or (B) older than 2 weeks
+like in the case of 2 years.
+
+3. Afterwards we assess the damage in ($$) per deal and the number of impacted investors. To do that, we calculate the delta
+between their desired investment amount and what their assigned prorated amount was. This will give us + or - in dollars amount.
+
+4. Situation (A): Within the last two weeks
+Hoping that because the deal was recent, the startup hasn't used the funds yet. In that case, we can rectify the issue by
+(1) contacting the startup and letting them know about the discovered bug and share the postmortem, (2) share with them
+the $$ amount they will need to refund to the investor(s) who paid more than what they had in mind, (3) notify the investors who
+wanted to invest more but ended up investing less, asking them if they'd be willing to put that money, and (4) there's of course
+the risk of the investors not wanting to invest up to their initial amount anymore, in that case we might want to ask the investors
+who accidentally paid more whether they're ok to retain the invested amount to help the startup stay at their target, and perhaps
+award them with something extra (like stocks, or ?).
+
+5. Situation (B): Two years ago deals
+If an investor ended up investing more than initially anticipated, the financial impact is bigger here. Due to the fact that
+(1) the startup is using the money and refunds aren't really an option here, (2) the amount might be too large for AngelList to step
+in here, (3) the investor is technically owed interest on top of the refund, (4) the equity they got might be valued more or less after
+two years, which will impact how they perceive the news.
+
+I would personally like to give all impacted investors on all deals (old and current) some special treatment, as we wouldn't want
+to lose those paying customers. Special treatment could mean some perference in our proration algorithm.
+
+In all the communications (emails or mail), we will need to include a link/QR code to the postmortem, the financial impact and
+the steps AngelList is taking to ensure this won't happen again. I think one possible way of ensuring this won't happen is to
+have a human interaction that has the final say before the deal status is moved to "approved".
